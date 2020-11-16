@@ -1,0 +1,12 @@
+ for (i = 2; i <= sqrt(num); i++) { 
+
+        if (arr[i] == 0)
+            continue;
+
+        for (int j = i + i; j <= num; j += i) {
+
+            arr[j] = 0;
+
+        }
+
+    }
