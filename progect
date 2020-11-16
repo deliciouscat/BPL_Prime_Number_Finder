@@ -1,12 +1,35 @@
- for (i = 2; i <= sqrt(num); i++) { 
+public static void getPrime(int num) {
 
-        if (arr[i] == 0)
-            continue;
+	int i = 2; // i :
 
-        for (int j = i + i; j <= num; j += i) {
+	boolean isPrime = true;
 
-            arr[j] = 0;
+		
 
-        }
+	while (i <= num) {
 
-    }
+		isPrime = true;
+
+		
+
+		for (int n = 2; n < i; n++) {
+
+			if (i % n == 0) {
+
+				isPrime = false;
+
+			}
+
+			continue;
+
+		}
+
+		
+
+		if (isPrime == true)
+
+			System.out.println(i);
+
+		i++;
+
+	}
