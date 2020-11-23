@@ -1,10 +1,21 @@
-number=701 #n은 규범님이 구하신 숫자입니다. 저는 예시로 701을 넣을게요.
+import sys
+import math
 
-for i in range(2,number+1):
-    if i:
-        prime.append(i)
-	for j in range(2*i,number+1,i): 
-	    a[j]=False
-print(primes)    
+number=     #number는 규범님께서 담당하신 부분에서 구하신 숫자입니다. 
+def get_prime(n):
+    is_prime=[]
+    for i in range(2,n+1):
+        if i==2:
+	    is_prime.append(i)
+	else:
+	    for j in range(2,n+2):
+	        if i%j!=0 and j==n+1:
+		    is_prime.append(i)
+		    break
+		if i%j==0:
+		    break
+print(is_prime)
+	    
+
 
 #아직 미완성입니다. 나머지는 좀 더 공부해봐야겟네요. 실행은 제대로 될련지..?
