@@ -12,7 +12,6 @@ def get_prime(n):
     for i in range(2,max_length):
         if n%i!=0 and i==max_length-1:
 	    is_prime.append(n)
-	    
-
+print(is_prime)
 
 #아직 미완성입니다. 나머지는 좀 더 공부해봐야겟네요. 실행은 제대로 될련지..?
