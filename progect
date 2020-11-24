@@ -1,7 +1,15 @@
-is_prime(n):
-if n<2:
-    return False
-for i in range(2,int(n**0.5))
-    if n%i==0:
-        return False
-return True
+primes=[] #윗단계에서 받아낸 숫자를 primes라는 리스트에 담아두자.
+is_primes=[] #소수를 담을 리스트
+isnt_primes=[] #소수가 아닌 수를 담을 리스트
+
+if n=1 or n=2:
+    isnt_primes.append(n)
+else n>2:
+    for i in range(2,int(n**0.5)-1) #범위를 '2'에서 'sqrt(n)에서 정수부분'으로 설정
+        if n%i==0:
+            isnt_primes.append(i)
+        else:
+            is_primes.append(i)
+
+print("소수는",is_primes,"입니다.")
+print("소수가 아닌것은",isnt_primes,"입니다.") #이건 과제 외적으로 제가 추가로 만든것.
