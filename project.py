@@ -1,5 +1,5 @@
 
-numbers = range(100) #윗단계에서 받아낸 숫자를 numbers라는 리스트에 담아두자.
+numbers=[] #윗단계에서 받아낸 숫자를 numbers라는 리스트에 담아두자.
 is_primes=[] #소수를 담을 리스트
 isnt_primes=[] #소수가 아닌 수를 담을 리스트
 
