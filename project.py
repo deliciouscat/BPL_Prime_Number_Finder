@@ -14,4 +14,4 @@ for n in numbers:
 for n in numbers:
     if not n in isnt_primes:
         is_primes.append(n)
-    return is_primes
+return is_primes
