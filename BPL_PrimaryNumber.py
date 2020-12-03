@@ -39,7 +39,7 @@ def run_model() :
     output.insert(tk.CURRENT,result + "\n")   # 제시한 답.
 
 search_engines = ttk.Combobox(root, width=17, textvariable=model_select)    # 콤보박스로 어떤 모델로 소수를 찾을지 선택
-# 선택한 사항을 textvariable에 저장하여 반환한다.
+# 선택한 사항은 model_select에 저장하여 반환된다.
 search_engines['values'] = ('Output test', 'Prime finder', 'Adjoined number prime')
 search_engines.grid(column=0, row=1)
 search_engines.current(0)     # 초기 선택값
