@@ -1,3 +1,3 @@
 # BPL_Prime_Number_Finder
 
-This is a test.
+Basic Programing Language - 2020 team project
